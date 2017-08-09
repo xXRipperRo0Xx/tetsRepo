@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   nombre = "Sergio";
 
+  nombre2 = "enriqueZ esPindola serGio raYMundo";
+
   arreglo = [1,2,3,4,5,6,7,8,9,10];
 
   slice_2 = 5;
@@ -24,11 +26,17 @@ export class AppComponent {
     nombre: "spiderman",
     clave: "peter parker",
     edad: 17,
-    direccion:{
+    direccion: {
       calle: "Casa de la tia may",
-      casa:"6"
+      casa: "6"
     }
 
   }
+
+  valorDePromesa = new Promise( (resolve,reject) => {
+    setTimeout( ()=> resolve('llego la data!'),3500 )
+  });
+
+  fecha = new Date();
 
 }

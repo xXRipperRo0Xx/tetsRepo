@@ -80,6 +80,31 @@
         <td> number:'.2-2' </td>
         <td>  {{ salario | number:'.2-2' }}</td>
       </tr>
+      <tr>
+        <td> {{ valorDePromesa }}</td>
+        <td> async </td>
+        <td>  {{ valorDePromesa | async }}</td>
+      </tr>
+      <tr>
+        <td> {{ fecha }}</td>
+        <td> date </td>
+        <td>  {{ fecha | date }}</td>
+      </tr>
+      <tr>
+        <td> {{ fecha }}</td>
+        <td> date:'medium' </td>
+        <td>  {{ fecha | date:'medium' }}</td>
+      </tr>
+      <tr>
+        <td> {{ fecha }}</td>
+        <td> date:'MMMM - dd' </td>
+        <td>  {{ fecha | date:'MMMM - dd' }}</td>
+      </tr>
+      <tr>
+        <td> {{ nombre2 }}</td>
+        <td> capitalizado </td>
+        <td>  {{ nombre2 | capitalziado:1:2:3:4:5 }}</td>
+      </tr>
     </tbody>
   </table>
 
@@ -89,5 +114,8 @@
   </ul>
 
   <h4>JSON</h4>
+  <pre>
+    {{ heroe  | json }}
+  </pre>
 
 </div>
