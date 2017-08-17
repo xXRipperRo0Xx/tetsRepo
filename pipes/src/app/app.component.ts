@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nombre = "Sergio";
+  nombre = "Sergio09";
 
   nombre2 = "enriqueZ esPindola serGio raYMundo";
 
@@ -38,5 +38,9 @@ export class AppComponent {
   });
 
   fecha = new Date();
+
+  video = '0nlJuwO0GDs';
+
+  activar  = true;
 
 }

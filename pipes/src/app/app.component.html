@@ -103,7 +103,20 @@
       <tr>
         <td> {{ nombre2 }}</td>
         <td> capitalizado </td>
-        <td>  {{ nombre2 | capitalziado:1:2:3:4:5 }}</td>
+        <td>  {{ nombre2 | capitalziado }}</td>
+      </tr>
+      <tr>
+        <td> {{ nombre2 }}</td>
+        <td> capitalizado:Todas false </td>
+        <td>  {{ nombre2 | capitalziado:false }}</td>
+      </tr>
+      <tr>
+        <td> {{ nombre }}</td>
+        <td> pass: {{ activar }}
+            <br>
+            <button (click)="activar = !activar" type="button" class="btn btn-outline-primary" style="font-size: 10px"> Activar/desactivar</button>
+        </td>
+        <td> {{ nombre | pass:activar }}</td>
       </tr>
     </tbody>
   </table>
@@ -117,5 +130,8 @@
   <pre>
     {{ heroe  | json }}
   </pre>
+
+  <h4>Youtube <small>video</small></h4>
+  <iframe width="560" height="315" [src]="video | domseguro:'https://www.youtube.com/embed/'" frameborder="0" allowfullscreen></iframe>
 
 </div>
